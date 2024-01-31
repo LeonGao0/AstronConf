@@ -17,6 +17,15 @@ return {
       desc = "go to head line",
     },
 
+    ["<C-j>"] = {
+      "10j",
+      desc = 'down move 10 lines',
+    },
+    
+    ["<C-k>"] = {
+      "10k",
+      desc = 'up move 10 lines',
+    },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
@@ -30,7 +39,7 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
     -- setting a mapping to false will disable it
